@@ -1,0 +1,482 @@
+/* Reset */
+*{
+ padding: 0;
+ margin-right: 0;
+ margin-left: 0;
+ color: #ece0e0;
+ box-sizing: border-box;
+ scroll-behavior: smooth;
+}
+
+ /* Color de fondo */
+body{
+  /* background: linear-gradient(90deg,  #2d2d35,    #161618); */
+  background: linear-gradient(90deg,  #1d1c1c,  #403d3d);
+  height: 100vh;
+}
+
+
+/* Fondo animado */
+.fondo-animado{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+   overflow: hidden; 
+  z-index: -1;
+}
+
+span.uno, 
+span.dos, 
+span.tres, 
+span.cuatro {
+ 
+  border: 0;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  animation: vuelta 7s linear infinite normal both;
+}
+
+span.uno{
+width: 9px;
+height: 9px;
+bottom: -9px;
+/* background: rgb(253, 2, 2); */
+background: rgb(255, 255, 255);
+
+}
+
+span.dos{
+  width: 5px;
+  height: 5px;
+  bottom: -5px;
+   /*background: rgb(253, 240, 1); */
+  background: rgb(255, 255, 255);
+  
+}
+
+span.tres{
+  width: 5px;
+  height: 5px;
+  bottom: -5px;
+ /*background: rgb(0, 255, 119); */
+ background: #fff;
+}
+  
+  
+
+
+span.cuatro{
+  width: 9px;
+  height: 9px;
+  bottom: -9px;
+   /*background: rgb(51, 1, 252); */
+  background: #fff;
+  
+}
+
+
+@keyframes vuelta {
+
+  from {
+    transform: rotate(0deg);
+    bottom: 0;
+    opacity: 0;
+  }
+
+  5%{
+    opacity: .2;
+}
+60%{
+  opacity: .2;
+}
+
+to {
+  transform: rotate(360deg);
+  bottom: calc(100% + 100px);
+  opacity: 0;
+}
+
+}
+
+.fondo-animado span:nth-child(1){
+  left: 5%;
+}
+.fondo-animado span:nth-child(2){
+  left: 50%;
+}
+.fondo-animado span:nth-child(3){
+  left: 35%;
+}
+.fondo-animado span:nth-child(4){
+  left: 75%;
+}
+.fondo-animado span:nth-child(5){
+  left: 25%;
+}
+.fondo-animado span:nth-child(6){
+  left: 85%;
+}
+.fondo-animado span:nth-child(7){
+  left: 90%;
+}
+.fondo-animado span:nth-child(8){
+  left: 65%;
+}
+.fondo-animado span:nth-child(9){
+  left: 60%;
+}
+.fondo-animado span:nth-child(10){
+  left: 75%;
+}
+.fondo-animado span:nth-child(11){
+  left: 10%;
+}
+.fondo-animado span:nth-child(12){
+  left: 45%;
+}
+
+
+span.delay-1{
+animation-delay: 1s;
+}
+span.delay-2{
+  animation-delay: 2s;
+}
+span.delay-3{
+  animation-delay: 3s;
+}
+span.delay-4{
+  animation-delay: 4s;
+}
+span.delay-5{
+  animation-delay: 5s;
+}
+span.delay-7{
+  animation-delay: 7s;
+}
+
+
+
+
+
+
+
+/* Contenedor */
+.container{
+
+    
+    flex-direction: column;
+    height: 100vh;
+    
+   
+  }
+  
+  
+   .main, .main-2 {
+  
+    padding: 20px;
+    margin: 10px;
+    
+  }
+  
+                      /*STYLES OF HEADER*/
+  .header{
+    height: auto;
+    
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3%;
+    box-sizing: border-box;
+    height: 145px;
+    margin: 0;
+    z-index: 1;
+    
+  }
+
+
+  
+
+    a.Logo {
+      height: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: #007acc;
+      letter-spacing: 5px;
+      transition: 1s;
+      
+      
+      
+  }
+
+  a.Logo:hover{
+    color: #fff;
+    
+  }
+
+  .icon-2{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    
+    
+  }
+
+  .main-menu{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   list-style: none;
+  }
+  
+  .menu-item{
+    margin: 0 1rem;
+    font-weight: 800;
+    color: #000;
+  }
+  
+  .main-menu .menu-item a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 1s;
+     
+    
+    
+   
+}
+
+.main-menu .menu-item a:hover{
+  font-size: 19px;
+  
+  
+}
+
+                         /* END STYLES OF HEADER*/
+
+  
+  
+  
+  
+
+
+
+                           /* Style of main 1*/
+  
+.main{
+ 
+  flex-basis: 100px;
+  flex-grow: 2;
+  flex-shrink: 0;
+  margin-top: 70px;
+  padding: 40px;
+ 
+ }
+  
+.titulo-intro{
+    display: flex;
+    justify-content:center;
+    font-size: 25px;
+  }
+
+.parrafo-1{
+  font-size: 20px;
+}  
+
+.ball{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: 50px;
+  background: #14a8e3;
+  animation-name: ball-of-left-and-right;
+  animation-duration: 5s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  
+
+}
+
+@keyframes ball-of-left-and-right {
+
+  0%{
+    left: 0;
+    background: #00b3ff;
+    border-style:dashed;
+    transform: rotate(0deg);
+    color: #0eac26;
+  }
+
+  20%{
+   
+    background: #e5ff00;
+    color:#54437a ;
+    
+    
+  }
+
+   30%{
+    background: #ff5454;
+    color: #598da4 ;
+   }
+
+  35%{
+    border-radius: 0;
+    color: #ff5454;
+    background: #ff00cc;
+  }
+
+  40%{
+    color: #3b08a8;
+  }
+
+  50%{
+    
+    background: #598da4;
+    color: #e5ff00;
+    
+    }
+
+   65%{
+    color: #973c82;
+   }
+  
+    80%{
+    border-style:dashed;
+    background: #54437a;
+    color:#0eac26 ;
+  }
+   
+  90%{
+    color: #4800ff;
+  }
+
+  100%{
+    left: 90%;
+    background: #00ff62; 
+    transform: rotate(380deg);
+    border-style: dashed;
+    color:#00b3ff ;
+    
+    
+  }
+  
+} 
+
+                            /* End Style of main */
+
+
+
+                        
+                             /* Main 2 */
+.main-2,.main-3{
+
+flex-basis: 100px;
+flex-grow: 2;
+flex-shrink: 0;   
+margin-top: 20px;
+padding: 40px;
+}
+                              
+.titulo-intro, .titulo-intro-1,  .titulo-intro-2, .titulo-intro-3{
+ display: flex;
+ justify-content:center;
+font-size: 25px;
+color: #007acc;
+}
+                            
+ .parrafo-2, .parrafo-3{
+     font-size: 20px;
+      }   
+      
+  
+  .footer{
+    
+    width: 100%;
+    padding:20px;
+    left: 0;
+    top: 10px;
+    margin: 0;
+   }
+
+
+
+  
+
+@media  screen and (max-width:1305px){
+
+  .container{
+    display: flex;
+   
+  }
+  
+  .menu-item{
+    display: none;
+  }
+
+ 
+
+  .header{
+    height: 70px;
+    width: 100%;
+    margin: 0;
+    left: 0;}
+
+    .ball{
+      width: 30px;
+      height: 30px;
+      position: relative;
+      border-radius: 50px;
+      background: #14a8e3;
+      animation-name: ball-of-left-and-right;
+      animation-duration: 4s;
+      animation-timing-function: cubic-bezier(0, 1.34, 1,-0.34) ;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+  
+    }
+  
+    @keyframes ball-of-left-and-right {
+  
+      0%{
+        left: 0;
+        background: #ff3300;
+      }
+
+      25%{
+        background: #ff3300;
+      }
+       
+       50%{
+        background: #00ff62;
+       }
+
+       70%{
+        background: #00ff62;
+       }
+
+        80%{
+          background: #00b3ff;
+        }
+      100%{
+        left: 80%;
+        background: #00b3ff;
+        
+      }
+      
+    }
+
+    
+  
+
+  }
