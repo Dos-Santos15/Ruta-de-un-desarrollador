@@ -6,6 +6,7 @@
  color: #ece0e0;
  box-sizing: border-box;
  scroll-behavior: smooth;
+ 
 }
 
  /* Color de fondo */
@@ -20,7 +21,7 @@ body{
 .fondo-animado{
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 225vh;
   top: 0;
   left: 0;
    overflow: hidden; 
@@ -42,19 +43,19 @@ span.cuatro {
 }
 
 span.uno{
-width: 9px;
-height: 9px;
-bottom: -9px;
+width: 8px;
+height: 8px;
+bottom: -8px;
 /* background: rgb(253, 2, 2); */
 background: rgb(255, 255, 255);
 
 }
 
 span.dos{
-  width: 5px;
-  height: 5px;
-  bottom: -5px;
-   /*background: rgb(253, 240, 1); */
+  width: 15px;
+  height: 15px;
+  bottom: -15px;
+  /* background: rgb(253, 240, 1); */
   background: rgb(255, 255, 255);
   
 }
@@ -63,18 +64,17 @@ span.tres{
   width: 5px;
   height: 5px;
   bottom: -5px;
- /*background: rgb(0, 255, 119); */
- background: #fff;
+  /* background: rgb(0, 255, 119); */
+  background: #fff;
+  
+  
 }
-  
-  
-
 
 span.cuatro{
-  width: 9px;
-  height: 9px;
-  bottom: -9px;
-   /*background: rgb(51, 1, 252); */
+  width: 20px;
+  height: 20px;
+  bottom: -20px;
+  /* background: rgb(51, 1, 252); */
   background: #fff;
   
 }
@@ -177,7 +177,7 @@ span.delay-7{
   }
   
   
-   .main, .main-2 {
+   .main, .main-2, .main-3, .main-4 {
   
     padding: 20px;
     margin: 10px;
@@ -191,7 +191,7 @@ span.delay-7{
     width: 100%;
     position: absolute;
     top: 0;
-    left: 0;
+    
     justify-content: center;
     align-items: center;
     padding: 0 3%;
@@ -199,6 +199,7 @@ span.delay-7{
     height: 145px;
     margin: 0;
     z-index: 1;
+    bottom: 10px;
     
   }
 
@@ -214,6 +215,9 @@ span.delay-7{
       color: #007acc;
       letter-spacing: 5px;
       transition: 1s;
+      flex-wrap: wrap;
+      flex-direction: column;
+      
       
       
       
@@ -228,6 +232,7 @@ span.delay-7{
     width: 40px;
     height: 40px;
     object-fit: cover;
+    margin-bottom: 10px;
     
     
   }
@@ -277,7 +282,7 @@ span.delay-7{
   flex-basis: 100px;
   flex-grow: 2;
   flex-shrink: 0;
-  margin-top: 70px;
+  margin-top: 150px;
   padding: 40px;
  
  }
@@ -379,7 +384,7 @@ span.delay-7{
 
                         
                              /* Main 2 */
-.main-2,.main-3{
+.main-2,.main-3, .main-4{
 
 flex-basis: 100px;
 flex-grow: 2;
@@ -388,14 +393,14 @@ margin-top: 20px;
 padding: 40px;
 }
                               
-.titulo-intro, .titulo-intro-1,  .titulo-intro-2, .titulo-intro-3{
+.titulo-intro, .titulo-intro-1,  .titulo-intro-2, .titulo-intro-3, .titulo-intro-4{
  display: flex;
  justify-content:center;
 font-size: 25px;
 color: #007acc;
 }
                             
- .parrafo-2, .parrafo-3{
+ .parrafo-2, .parrafo-3, .parrafo-4{
      font-size: 20px;
       }   
       
@@ -429,8 +434,15 @@ color: #007acc;
   .header{
     height: 70px;
     width: 100%;
-    margin: 0;
-    left: 0;}
+    margin-top: 15px;
+    left: 0;
+    display: flex;
+    font-size: 10px;
+  }
+
+  .main{
+    margin-top: 70px;
+  }
 
     .ball{
       width: 30px;
@@ -438,15 +450,18 @@ color: #007acc;
       position: relative;
       border-radius: 50px;
       background: #14a8e3;
-      animation-name: ball-of-left-and-right;
+      animation-name: ball-of-left-and-right-2;
       animation-duration: 4s;
       animation-timing-function: cubic-bezier(0, 1.34, 1,-0.34) ;
       animation-iteration-count: infinite;
       animation-direction: alternate;
   
     }
+
+    
+  }
   
-    @keyframes ball-of-left-and-right {
+    @keyframes ball-of-left-and-right-2 {
   
       0%{
         left: 0;
@@ -477,6 +492,30 @@ color: #007acc;
     }
 
     
-  
 
-  }
+
+    @media screen and (Min-width:356px) and (Max-width:457px){
+
+      .header{
+       font-size: 7px;
+      }
+
+    }
+
+     @media screen and (Min-width:325px) and (Max-width:347px){  /* 320 347 */
+
+.header{
+  font-size: 6px;
+}
+
+}
+
+@media screen and (Min-width:293px) and (Max-width:325px){
+   
+  .header{
+    font-size: 5px;
+ }
+}
+
+
+
